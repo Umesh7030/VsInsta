@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(171, 238, 238);
+    background-image: url(cityy.jpg);
+    
+}
+header{
+   
+   
+}
+.sp1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 500px;
+
+    
+}
+h5{
+   font-size: larger;
+}
+H4{
+    font-size: larger;
+}
+h2{
+    
+    align-items: center;
+   
+    margin-left:600px ;
+   
+}
+main{
+  
+}

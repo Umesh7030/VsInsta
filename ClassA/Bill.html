@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Bills.CSS">
+
+</head>
+<body>
+   <header class="d-flex justify-content-between ">
+    <span class="nb">New Bill</span>
+    <div>
+        <span class="bi bi-dash"></span>
+        <span class="bi bi-calendar"> </span>
+        <span class="bi bi-x"></span>
+    </div>
+</header>
+   <main>
+    <section class="d-flex justify-content-between" style="margin-left: 20px; margin-right: 20px; margin-top: 10px;">
+        <span><h2>Nirved SuperMarket</h2></span>
+
+    <span>
+        <span> Date of Bill</span>
+            <div><input type="date"></div>
+    </span>
+    <span>
+           <span>Time of bill</span>
+           <div>11:43:34</div>
+        </span>
+        <span><a href="">New Bill</a></span>
+        <span>
+            <span>Gst type</span>
+            <div>
+                <select>
+                    <option value="">Cgst</option>
+                    <option value="">Gst</option>
+                </select>
+            </div>
+        </span>
+        <span><button>Exit</button></span>
+</section>
+<hr>
+<section class="d-flex justify-content-between" style="margin-left: 20px;">
+    <section >
+        <div class="d-flex justify-content-between" style="margin-left: 50px;">
+         <span><h5>Bill Number 6</h5></span>
+         <span>Customor <select name="" id="">
+             <option>Cash</option>
+             <option>online</option>
+         </select></span>
+         <span>Mobile <input type="text" size="12"></span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+         <span>
+             <span>Iteam Code</span>
+             <div><input type="text>" size="12"></div>
+         </span>
+         <span>
+             <span>iteam name</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>qty</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>iteam type</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>unit</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>rate</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>tax</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>tax amound</span>
+             <div><input type="text" size="12"></div>
+         </span>
+         <span>
+             <span>Final Amount</span>
+             <div><input type="text" size="12"></div>
+         </span>
+        </div>
+        <br>
+        <div class="d-flex justify-content-between">
+         <span><button>Add</button></span>
+         <span><button>Edit ideam</button></span>
+         <span><button>Delete</button></span>
+         <span>
+             <span>HSN Code</span>
+             <div><input type="text" size="12"></div>
+         </span>
+        </div>
+ 
+        <div >
+         <table class="table1">
+             <tr>
+                 <th>iteam code</th>
+                 <th>iteam name</th>
+                 <th>iteam hscode</th>
+                 <th>qty</th>
+                 <th>iteamtype</th>
+                 <th>unit</th>
+                 <th>rate</th>
+                 <th>amount</th>
+                 <th>tax</th>
+                 <th>name</th>
+                 <th>total</th>
+             </tr>
+             <tr>
+                 <td>7898775</td>
+                 <td>rrty65757</td>
+                 <td>------</td>
+                 <td>5</td>
+                 <td>---</td>
+                 <td>1 ltr</td>
+                 <td>76877</td>
+                 <td>5765.7567</td>
+                 <td>6676576</td>
+                 <td>7868</td>
+             </tr>
+             <tr>
+                 <td>12345</td>
+                 <td>ABC 7474</td>
+                 <td>488484</td>
+                 <td>53</td>
+                 <td>---</td>
+                 <td>1 ltr</td>
+                 <td>48484</td>
+                 <td>999.99</td>
+                 <td>umesh</td>
+                 <td>1234</td>
+             </tr>
+             <tr>
+                 <td>63737</td>
+                 <td>GGYH 37373</td>
+                 <td>------</td>
+                 <td>2</td>
+                 <td>---</td>
+                 <td>1 ltr</td>
+                 <td>383</td>
+                 <td>2999.99</td>
+                 <td>Umsh</td>
+                 <td>7738</td>
+             </tr>
+         </table>
+ 
+        </div>
+     </section>
+     <section>
+         <div style="margin-right: 200px;">
+            <form action="">
+                <table class="table2">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>Gst </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Counter No</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Customer Name</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Creadit</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </form>
+            <br>
+             <div style="margin-left: 20px;"><input type="checkbox" >Apply This Create in that</div>
+         </div>
+         <div>
+             <form action="" style="margin-top: 20px;">
+                 <h2>Your Shopping</h2>
+                 <div>Sub Total 93938:929</div>
+                 <div>610.17</div>
+                 <div>4423</div>
+                
+                 <input type="text">
+                 <div>38383</div>
+                 <div><input type="text" placeholder="Recived Amount"></div>
+                 <div>Return amount 75</div>
+                 <br>
+                 <input type="checkbox" style="margin-left: 30px;">Add to Debit
+             </form>
+         </div>
+     </section>
+</section>
+
+    <section></section>
+
+   </main>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>

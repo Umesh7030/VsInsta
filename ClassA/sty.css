@@ -1,0 +1,78 @@
+/* General Section Styling */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Individual Product Card */
+.product {
+    width: 250px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product Name */
+.product h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Product Price */
+.product h3 {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: bold;
+}
+.um{
+    margin-right: 400px;
+    margin-top: 45px;
+}
+.ni{
+    margin-left: 200px;
+}
+.h12{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.flipc{
+    
+
+}
+.se{
+    margin-top: 30px;
+    
+
+
+}
+.fi{
+    background-origin: padding-box;
+    background-color: #b6ec5f;
+    box-shadow: #ffffff;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+
+}
