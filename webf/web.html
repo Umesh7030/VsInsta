@@ -1,84 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Registration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f9;
-            background-image: url(cityy.jpg);
-        }
-        h1 {
-            text-align: center;
-        }
-        .form-container {
-            width: 500px;
-            margin: 0 auto;
-           
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            font-size: larger;
-        }
-        input[type="text"], input[type="email"], input[type="date"], input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ddd;
-           
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
 
-    <h1>Customer Registration</h1>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
 
-    <div class="form-container">
-        <form action="submit_form.php" method="post">
-            <label for="customer_id">Customer ID</label>
-            <input type="text" id="customer_id" name="customer_id" required>
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
 
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name" required>
+/* Heading styling */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
 
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" required>
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+/* Label and input styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
 
-            <label for="phone_number">Phone Number</label>
-            <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}" required>
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
 
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" required>
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
 
-            <label for="registration_date">Registration Date</label>
-            <input type="date" id="registration_date" name="registration_date" required>
+/* Submit button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
 
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
 
-</body>
-</html>
+/* Message box styling */
+.message {
+    margin-top: 20px;
+    color: green;
+}
+
+.message h3 {
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+    }
+}
